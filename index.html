@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Varun's Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container" id="login-container">
+    <h2>Login to Access Portfolio</h2>
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="login()">Login</button>
+    <p id="error-message"></p>
+  </div>
+
+  <div class="container hidden" id="portfolio-container">
+    <h1>Welcome to the Portfolio of Varun</h1>
+    <div class="buttons">
+      <button onclick="showResume()">Resume</button>
+      <button onclick="goToGitHub()">GitHub</button>
+    </div>
+    <div id="resume-display" class="hidden">
+      <img src="resume.png" alt="Varun's Resume" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
