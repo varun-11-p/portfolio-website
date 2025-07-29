@@ -7,25 +7,20 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container" id="login-container">
-    <h2>Login to Access Portfolio</h2>
-    <input type="text" id="username" placeholder="Username" />
-    <input type="password" id="password" placeholder="Password" />
-    <button onclick="login()">Login</button>
-    <p id="error-message"></p>
-  </div>
-
-  <div class="container hidden" id="portfolio-container">
+  <div class="container" id="main-content">
     <h1>Welcome to the Portfolio of Varun</h1>
     <div class="buttons">
-      <button onclick="showResume()">Resume</button>
-      <button onclick="goToGitHub()">GitHub</button>
+      <button id="resume-btn">Resume</button>
+      <button id="github-btn">GitHub</button>
     </div>
-    <div id="resume-display" class="hidden">
-      <img src="resume.png" alt="Varun's Resume" />
-    </div>
+  </div>
+
+  <div class="resume-overlay" id="resume-overlay">
+    <button id="cancel-btn">×</button>
+    <img src="resume.png" alt="Varun's Resume" />
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
+
